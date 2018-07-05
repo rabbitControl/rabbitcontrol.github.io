@@ -701,7 +701,7 @@ TOISocket.prototype.open = function(address, port, ssl) {
     this.webSocket.onmessage = this._onmessage;
     this.webSocket.onerror = this._onerror;
   } catch(err) {
-    console.log("socket error: " + err.message);
+    console.log("socket error: " + JSON.stringify(err));
   }
 
 };
