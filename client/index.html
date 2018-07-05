@@ -589,8 +589,17 @@
   }
 
   function myerror(error) {
+
     console.log("error on socket: " + JSON.stringify(error));
-    $('#error').html("error connecting. error: " + JSON.stringify(error));
+
+    var isFirefox = typeof InstallTrigger !== 'undefined';
+
+    if (isFirefox && err.message === "The operation is insecure.") {
+      $('#error').html("attempting to open unsecure websocket from https. to allow this set 'network.websocket.allowInsecureFromHTTPS' in about:config");
+    } else {
+      $('#error').html("error: " + JSON.stringify(error));
+    }
+
     resetUI();
   }
 
