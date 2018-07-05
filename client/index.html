@@ -578,7 +578,7 @@
 
   function resetUI() {
     console.log("resetUI");
-    
+
     client.clear();
     $('#content').empty();
     $('#login').show();
@@ -600,10 +600,12 @@
 
     if (error != undefined &&
         isFirefox &&
-        error.message === "The operation is insecure.")
+        error.message == "The operation is insecure.")
     {
+      console.log("set ff error");
       $('#error').html("attempting to open unsecure websocket from https. to allow this set 'network.websocket.allowInsecureFromHTTPS' in about:config");
     } else {
+      console.log("set error message");
       $('#error').html("error: " + error.message);
     }
 
