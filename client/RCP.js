@@ -400,7 +400,6 @@ ToiClient.prototype.open = function(address, port, ssl) {
 
 
 ToiClient.prototype.clear = function() {
-  // open address
   this.valueCache = {};
 }
 ToiClient.prototype.setonclose = function(func) {
