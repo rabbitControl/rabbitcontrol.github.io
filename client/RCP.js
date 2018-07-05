@@ -691,14 +691,19 @@ TOISocket.prototype.open = function(address, port, ssl) {
     this.address = "ws://" + address + ":" + port;
   }
 
-  this.webSocket = new window.WebSocket(this.address);
-  this.webSocket.binaryType = "arraybuffer";
-  this.webSocket._ = this;
+  try {
+    this.webSocket = new window.WebSocket(this.address);
+    this.webSocket.binaryType = "arraybuffer";
+    this.webSocket._ = this;
 
-  this.webSocket.onopen = this._onopen;
-  this.webSocket.onclose = this._onclose;
-  this.webSocket.onmessage = this._onmessage;
-  this.webSocket.onerror = this._onerror;
+    this.webSocket.onopen = this._onopen;
+    this.webSocket.onclose = this._onclose;
+    this.webSocket.onmessage = this._onmessage;
+    this.webSocket.onerror = this._onerror;
+  } catch(err) {
+    console.log("socket error: " + err.message);
+  }
+
 };
 
 
