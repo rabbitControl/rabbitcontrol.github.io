@@ -590,9 +590,11 @@
 
   function myerror(error) {
 
-    console.log("error on socket: " + JSON.stringify(error));
+    console.log("error on socket: " + error.message);
 
     var isFirefox = typeof InstallTrigger !== 'undefined';
+
+    console.log("isfirefox: " + isFirefox);
 
     if (error !== undefined &&
         isFirefox &&
@@ -600,7 +602,7 @@
     {
       $('#error').html("attempting to open unsecure websocket from https. to allow this set 'network.websocket.allowInsecureFromHTTPS' in about:config");
     } else {
-      $('#error').html("error: " + JSON.stringify(error));
+      $('#error').html("error: " + error.message);
     }
 
     resetUI();
