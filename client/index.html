@@ -594,7 +594,10 @@
 
     var isFirefox = typeof InstallTrigger !== 'undefined';
 
-    if (isFirefox && err.message === "The operation is insecure.") {
+    if (error !== undefined &&
+        isFirefox &&
+        error.message === "The operation is insecure.")
+    {
       $('#error').html("attempting to open unsecure websocket from https. to allow this set 'network.websocket.allowInsecureFromHTTPS' in about:config");
     } else {
       $('#error').html("error: " + JSON.stringify(error));
