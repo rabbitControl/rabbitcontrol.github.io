@@ -577,6 +577,8 @@
   }
 
   function resetUI() {
+    console.log("resetUI");
+    
     client.clear();
     $('#content').empty();
     $('#login').show();
@@ -596,7 +598,7 @@
 
     console.log("isfirefox: " + isFirefox);
 
-    if (error !== undefined &&
+    if (error != undefined &&
         isFirefox &&
         error.message === "The operation is insecure.")
     {
