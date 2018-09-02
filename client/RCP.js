@@ -1443,6 +1443,13 @@ ToiParameter = function(_id, _type) {
 
   this.id = _id;
   this.type = _type;
+  switch (type.typeid) {
+	case RcpTypes.Datatype.FLOAT32:
+    case RcpTypes.Datatype.FLOAT64:
+		type.multipleof = 0.01; break;
+	default:
+		type.multipleof = 1; break;
+  }
 
   // optionals
   this.value = null;
