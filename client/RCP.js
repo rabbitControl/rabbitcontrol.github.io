@@ -691,14 +691,14 @@ TOISocket.prototype.open = function(address, port, ssl) {
   }
 
   try {
-    this.webSocket = new window.WebSocket(this.address);
-    this.webSocket.binaryType = "arraybuffer";
-    this.webSocket._ = this;
+  this.webSocket = new window.WebSocket(this.address);
+  this.webSocket.binaryType = "arraybuffer";
+  this.webSocket._ = this;
 
-    this.webSocket.onopen = this._onopen;
-    this.webSocket.onclose = this._onclose;
-    this.webSocket.onmessage = this._onmessage;
-    this.webSocket.onerror = this._onerror;
+  this.webSocket.onopen = this._onopen;
+  this.webSocket.onclose = this._onclose;
+  this.webSocket.onmessage = this._onmessage;
+  this.webSocket.onerror = this._onerror;
   } catch(err) {
 
     if (this.onerrorcb) {
@@ -1150,6 +1150,13 @@ TOIPacketDecoder.prototype._parseTypeNumber = function(_type, _io) {
   if (RCPVerbose) console.log("parse number options");
 
   var type = _type;
+  switch (type.typeid) {
+	case RcpTypes.Datatype.FLOAT32:
+    case RcpTypes.Datatype.FLOAT64:
+		type.multipleof = 0.01; break;
+	default:
+		type.multipleof = 1; break;
+  }
 
   // parse optionals
   while (true) {
@@ -1443,13 +1450,6 @@ ToiParameter = function(_id, _type) {
 
   this.id = _id;
   this.type = _type;
-  switch (type.typeid) {
-	case RcpTypes.Datatype.FLOAT32:
-    case RcpTypes.Datatype.FLOAT64:
-		type.multipleof = 0.01; break;
-	default:
-		type.multipleof = 1; break;
-  }
 
   // optionals
   this.value = null;
@@ -1591,6 +1591,10 @@ ToiParameter.prototype.update = function(parameter) {
 
   if (parameter.order != null) {
     this.order = parameter.order;
+  }
+  
+  if (parameter.parentid != null) {
+    this.parentid = parameter.parentid;
   }
 
   if (parameter.widget != null) {
