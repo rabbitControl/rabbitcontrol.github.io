@@ -82,7 +82,7 @@
             input.attr("step", parameter.type.multipleof);
           }
           if (parameter.type.unit != null) {
-            alert("unit: " + parameter.type.unit);
+            console.log("unit: " + parameter.type.unit);
           }
 
           updateParam(parameter);
@@ -577,8 +577,6 @@
   }
 
   function resetUI() {
-    console.log("resetUI");
-
     client.clear();
     $('#content').empty();
     $('#login').show();
@@ -637,6 +635,11 @@
 </head>
 
 <body onload="init()">
+
+  <h2>
+  Preliminary RCP-Client
+  </h2>
+  Please enter the address and port of an RCP-Server and connect.
 
   <div id="login" style="margin:10px;">
 

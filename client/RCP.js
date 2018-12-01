@@ -1,6 +1,6 @@
 
 // flag to control some verbose logging
-var RCPVerbose = true;
+var RCPVerbose = false;
 var TERMINATOR = 0;
 
 var languages = [];
@@ -400,6 +400,7 @@ ToiClient.prototype.open = function(address, port, ssl) {
 
 
 ToiClient.prototype.clear = function() {
+  // open address
   this.valueCache = {};
 }
 ToiClient.prototype.setonclose = function(func) {
@@ -690,7 +691,6 @@ TOISocket.prototype.open = function(address, port, ssl) {
     this.address = "ws://" + address + ":" + port;
   }
 
-  try {
   this.webSocket = new window.WebSocket(this.address);
   this.webSocket.binaryType = "arraybuffer";
   this.webSocket._ = this;
@@ -699,16 +699,6 @@ TOISocket.prototype.open = function(address, port, ssl) {
   this.webSocket.onclose = this._onclose;
   this.webSocket.onmessage = this._onmessage;
   this.webSocket.onerror = this._onerror;
-  } catch(err) {
-
-    if (this.onerrorcb) {
-      this.onerrorcb(err);
-      return;
-    }
-
-    console.error("socket error: " + err.message);
-  }
-
 };
 
 
