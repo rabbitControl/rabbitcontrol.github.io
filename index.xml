@@ -60,6 +60,17 @@ Use a app to control exposed parameters.
     </item>
     
     <item>
+      <title>ofxRabbitControl</title>
+      <link>/platforms/ofxrabbitcontrol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/platforms/ofxrabbitcontrol/</guid>
+      <description>Get the addon here.
+See Demo for exposing parameters.
+Use a app to control exposed parameters.</description>
+    </item>
+    
+    <item>
       <title>Typescript</title>
       <link>/libs/typescript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -72,6 +83,16 @@ github.com/rabbitControl/rcp-ts-react-example
 github.com/rabbitControl/rcp-ts-client
 Use an app to control exposed parameters.
 &amp;nbsp;</description>
+    </item>
+    
+    <item>
+      <title>vvvv</title>
+      <link>/platforms/vvvv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/platforms/vvvv/</guid>
+      <description>vvvv 50beta &amp;gt;= 38.2 These versions ship with support out of the box. Simply create a node called Rabbit (RCP) and configure its Host and Port inputs if necessary. Now you can already connect to this server using an app.
+Next you can start exposing parameters by creating IOBoxes, selecting them and pressing Ctrl+K. Any exposed IOBox will show up in all connected clients and can now be controlled bidirectionally, ie.</description>
     </item>
     
     <item>

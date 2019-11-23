@@ -19,7 +19,15 @@
   </url>
   
   <url>
+    <loc>/platforms/ofxrabbitcontrol/</loc>
+  </url>
+  
+  <url>
     <loc>/libs/typescript/</loc>
+  </url>
+  
+  <url>
+    <loc>/platforms/vvvv/</loc>
   </url>
   
   <url>
@@ -65,6 +73,10 @@
   
   <url>
     <loc>/libs/</loc>
+  </url>
+  
+  <url>
+    <loc>/platforms/</loc>
   </url>
   
   <url>
