@@ -6,10 +6,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> RabbitControl </title>
+  <title> Java </title>
 
   
-  <meta name="description" content="Control parameters exposed from any application. Choose a carrot to control parameters from your phone, browser or desktop."> 
+  <meta name="description" content="Use RabbitControl with Java"> 
   
   
   
@@ -21,30 +21,24 @@
   <meta name="author" content="the rabbits">
 
 
-  <meta property="og:title" content="RabbitControl - Remote Control Anything" />
-<meta property="og:description" content="Control parameters exposed from any application. Choose a carrot to control parameters from your phone, browser or desktop." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/" />
-
-<meta property="og:updated_time" content="2019-01-26T00:00:00+00:00" />
-
-  
-
-
+  <meta property="og:title" content="Java" />
+<meta property="og:description" content="Use RabbitControl with Java" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/libs/java/" />
 
 
   
-   
 
 
 
- 
+
   
   
   
-  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="RabbitControl" /> 
+  
+  
 
-  <link rel="canonical" href="/">  
+  <link rel="canonical" href="/libs/java/">  
 
   <link rel="shortcut icon" type="image/ico" href="favicon.ico">
 
@@ -97,25 +91,70 @@
   </div>
  </header>
   <main>
+  <div id="main">
+    <div id="hero">
+      <h1> Java </h1>
+      <p class="hero-lead">
+           RCP model and transporter.
+      </p>
 
-<div id="main">
-  <div id="hero">
-    <figure>
-    <img src="rcp-hackathon-quer-6.jpg"/> 
-</figure>
-
-
-    <h2>RabbitControl - Remote Control Anything</h2>
-    <p>Control parameters exposed from any application. Choose a carrot to control parameters from your phone, browser or desktop.</p>
-  </div>
-
-  <div id="hero">
-    <a href="https://www.bigfug.com/software/fugio/" target="_blank"><img src="/logos/fugio.png" alt="Fugio"></a><br><br>
-    <a href="https://github.com/rabbitControl/ofxRabbitControl" target="_blank"><img src="/logos/of.png" alt="openFrameworks"></a><br><br>
-    <a href="https://vvvv.org/" target="_blank"><img src="/logos/vvvv.png" alt="VVVV-beta"></a><br>
+    </div>
+    <div id="kube-component" class="content">
     
-  </div>
-</div>
+
+    
+
+<h3 id="get-the-package-for">Get the package for</h3>
+
+<p>maven:</p>
+
+<pre><code>&lt;dependency&gt;
+  &lt;groupId&gt;io.github.rabbitcontrol&lt;/groupId&gt;
+  &lt;artifactId&gt;rcp&lt;/artifactId&gt;
+  &lt;version&gt;0.2.7&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>gradle:</p>
+
+<pre><code>implementation 'io.github.rabbitcontrol:rcp:0.2.7'
+</code></pre>
+
+<p>rcp-java supports java &gt;= 1.6</p>
+
+<h3 id="source">Source</h3>
+
+<p>see: <a href="https://github.com/rabbitControl/rcp-java">https://github.com/rabbitControl/rcp-java</a></p>
+
+<h3 id="example">Example</h3>
+
+<pre><code class="language-java">RCPServer rabbitServer = new RCPServer();
+
+final WebsocketServerTransporterNetty transporter = new WebsocketServerTransporterNetty();
+
+rabbitServer.addTransporter(transporter);
+
+transporter.bind(10000);
+
+// expose parameter
+Int32Parameter floatParameter = rabbitServer.createInt32Parameter(&quot;Int 32&quot;);
+
+// update server (push to clients)
+rabbitServer.update();
+</code></pre>
+
+<p>&nbsp;</p>
+
+<hr />
+
+<p>Use a <a href="/apps/">client</a> to control exposed parameters.</p>
+
+<p>&nbsp;</p>
+
+
+    
+    </div>
+    </div>
 </main>
   <footer>   <footer id="footer">
     <nav>

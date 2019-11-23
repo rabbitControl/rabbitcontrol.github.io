@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/developers/dotnet/</loc>
+    <loc>/libs/dotnet/</loc>
   </url>
   
   <url>
-    <loc>/developers/c/</loc>
+    <loc>/libs/c/</loc>
   </url>
   
   <url>
-    <loc>/developers/c&#43;&#43;/</loc>
+    <loc>/libs/c&#43;&#43;/</loc>
   </url>
   
   <url>
-    <loc>/developers/java/</loc>
+    <loc>/libs/java/</loc>
   </url>
   
   <url>
-    <loc>/developers/typescript/</loc>
+    <loc>/libs/typescript/</loc>
   </url>
   
   <url>
-    <loc>/clients/webclient/</loc>
+    <loc>/apps/webclient/</loc>
   </url>
   
   <url>
@@ -52,15 +52,15 @@
   </url>
   
   <url>
-    <loc>/clients/</loc>
-  </url>
-  
-  <url>
-    <loc>/developers/</loc>
+    <loc>/apps/</loc>
   </url>
   
   <url>
     <loc>/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>/libs/</loc>
   </url>
   
   <url>
