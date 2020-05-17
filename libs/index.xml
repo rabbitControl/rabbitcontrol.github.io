@@ -1,77 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Libs on RabbitControl</title>
-    <link>/libs/</link>
-    <description>Recent content in Libs on RabbitControl</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/libs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>.NET</title>
-      <link>/libs/dotnet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/libs/dotnet/</guid>
-      <description>Get RCPSharp nuget from nuget.org. Source is available here.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Libs on RabbitControl</title><link>/libs/</link><description>Recent content in Libs on RabbitControl</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/libs/index.xml" rel="self" type="application/rss+xml"/><item><title>.NET</title><link>/libs/dotnet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/libs/dotnet/</guid><description>Get RCPSharp nuget from nuget.org. Source is available here.
 See Demo for exposing parameters
-Use a app to control exposed parameters.</description>
-    </item>
-    
-    <item>
-      <title>C</title>
-      <link>/libs/c/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/libs/c/</guid>
-      <description>Please contact us if you are interested in using RabbitControl in C.
+Use a app to control exposed parameters.</description></item><item><title>C</title><link>/libs/c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/libs/c/</guid><description>Please contact us if you are interested in using RabbitControl in C.
 Use a app to control exposed parameters.
-&amp;nbsp;</description>
-    </item>
-    
-    <item>
-      <title>C&#43;&#43;</title>
-      <link>/libs/c&#43;&#43;/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/libs/c&#43;&#43;/</guid>
-      <description>Source github.com/rabbitControl/rcp-cpp
-Use a app to control exposed parameters.
-&amp;nbsp;</description>
-    </item>
-    
-    <item>
-      <title>Java</title>
-      <link>/libs/java/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/libs/java/</guid>
-      <description>Get the package for maven:
-&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;io.github.rabbitcontrol&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;rcp&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.2.7&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  gradle:
-implementation &#39;io.github.rabbitcontrol:rcp:0.2.7&#39;  rcp-java supports java &amp;gt;= 1.6
+ </description></item><item><title>C++</title><link>/libs/c++/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/libs/c++/</guid><description>Source github.com/rabbitControl/rcp-cpp Use a app to control exposed parameters.
+ </description></item><item><title>Java</title><link>/libs/java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/libs/java/</guid><description>Get the package for maven:
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;io.github.rabbitcontrol&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;rcp&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.2.7&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; gradle:
+implementation 'io.github.rabbitcontrol:rcp:0.2.7' rcp-java supports java &amp;gt;= 1.6
 Source see: https://github.com/rabbitControl/rcp-java
-Example RCPServer rabbitServer = new RCPServer(); final WebsocketServerTransporterNetty transporter = new WebsocketServerTransporterNetty(); rabbitServer.addTransporter(transporter); transporter.bind(10000); // expose parameter Int32Parameter floatParameter = rabbitServer.createInt32Parameter(&amp;quot;Int 32&amp;quot;); // update server (push to clients) rabbitServer.update();  &amp;nbsp;
-Use a app to control exposed parameters.
-&amp;nbsp;</description>
-    </item>
-    
-    <item>
-      <title>Typescript</title>
-      <link>/libs/typescript/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/libs/typescript/</guid>
-      <description>Get the package for npm npm install --save rabbitcontrol
-Source github.com/rabbitControl/rcp-ts
-Example See how to use rcp-ts
-github.com/rabbitControl/rcp-ts-react-example
-github.com/rabbitControl/rcp-ts-client
-Use an app to control exposed parameters.
-&amp;nbsp;</description>
-    </item>
-    
-  </channel>
-</rss>
+Example RCPServer rabbitServer = new RCPServer(); final WebsocketServerTransporterNetty transporter = new WebsocketServerTransporterNetty(); rabbitServer.addTransporter(transporter); transporter.bind(10000); // expose parameter Int32Parameter floatParameter = rabbitServer.createInt32Parameter(&amp;#34;Int 32&amp;#34;); // update server (push to clients) rabbitServer.update();   Use a app to control exposed parameters.
+ </description></item><item><title>Typescript</title><link>/libs/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/libs/typescript/</guid><description>Get the package for npm npm install --save rabbitcontrol
+Source github.com/rabbitControl/rcp-tsExample See how to use rcp-ts
+github.com/rabbitControl/rcp-ts-react-examplegithub.com/rabbitControl/rcp-ts-client Use an app to control exposed parameters.
+ </description></item></channel></rss>
