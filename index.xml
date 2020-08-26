@@ -10,6 +10,8 @@ Source see: https://github.com/rabbitControl/rcp-java
 Example RCPServer rabbitServer = new RCPServer(); final WebsocketServerTransporterNetty transporter = new WebsocketServerTransporterNetty(); rabbitServer.addTransporter(transporter); transporter.bind(10000); // expose parameter Int32Parameter floatParameter = rabbitServer.createInt32Parameter(&amp;#34;Int 32&amp;#34;); // update server (push to clients) rabbitServer.update();   Use a app to control exposed parameters.
  </description></item><item><title>ofxRabbitControl</title><link>/platforms/ofxrabbitcontrol/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/platforms/ofxrabbitcontrol/</guid><description>Get the addon here.
 See Demo for exposing parameters.
+Use a app to control exposed parameters.</description></item><item><title>openrndr</title><link>/platforms/openrndr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/platforms/openrndr/</guid><description>Use rabbitControl with openrndr:
+Get orx-rabbit-control for openrndr here.
 Use a app to control exposed parameters.</description></item><item><title>Typescript</title><link>/libs/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/libs/typescript/</guid><description>Get the package for npm npm install --save rabbitcontrol
 Source github.com/rabbitControl/rcp-tsExample See how to use rcp-ts
 github.com/rabbitControl/rcp-ts-react-examplegithub.com/rabbitControl/rcp-ts-client Use an app to control exposed parameters.
