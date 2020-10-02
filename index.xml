@@ -12,7 +12,7 @@ Example RCPServer rabbitServer = new RCPServer(); final WebsocketServerTransport
 See Demo for exposing parameters.
 Use a app to control exposed parameters.</description></item><item><title>openrndr</title><link>/platforms/openrndr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/platforms/openrndr/</guid><description>Use rabbitControl with openrndr:
 Get orx-rabbit-control for openrndr here.
-Use a app to control exposed parameters.</description></item><item><title>Touch Designer</title><link>/platforms/touchdesigner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/platforms/touchdesigner/</guid><description>Read this blog post to learn how to use rabbitControl with Touch Designer.
+Use a app to control exposed parameters.</description></item><item><title>TouchDesigner</title><link>/platforms/touchdesigner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/platforms/touchdesigner/</guid><description>Read this blog post to learn how to use rabbitControl with TouchDesigner.
 Get RCP_TD.tox here.
 Use a app to control exposed parameters.</description></item><item><title>Typescript</title><link>/libs/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/libs/typescript/</guid><description>Get the package for npm npm install --save rabbitcontrol
 Source github.com/rabbitControl/rcp-tsExample See how to use rcp-ts
