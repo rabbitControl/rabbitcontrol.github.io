@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apps on RabbitControl</title><link>/apps/</link><description>Recent content in Apps on RabbitControl</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/apps/index.xml" rel="self" type="application/rss+xml"/><item><title>Webclient</title><link>/apps/webclient/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/apps/webclient/</guid><description>Launch Client From any browser (desktop or mobile) open this URL:
-http://client.rabbitcontrol.cc
-Enter Host and Port of your rcp server application and click Connect.
-Or directly connect to an rcp server by providing ip:port in the URL like e.g:
-http://client.rabbitcontrol.cc/#192.168.0.23:10000
-After connecting to a rabbitControl server you should now see all exposed parameters. e.g.:</description></item></channel></rss>
